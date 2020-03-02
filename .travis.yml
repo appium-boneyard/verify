@@ -1,18 +1,17 @@
 language: java
 sudo: false
 jdk:
-  openjdk7
   openjdk8
   openjdk9
   openjdk10
   openjdk11
+  openjdk12
 
 jobs:
   include:
     - stage:
-      dist: trusty
       name: Jar Build
-      jdk: openjdk7
+      jdk: openjdk8
       script:
         - |
           if [[ "$TRAVIS_BRANCH" == "master" && -n "$TRAVIS_TAG" ]]; then
@@ -20,11 +19,6 @@ jobs:
           else
             ./build.sh
           fi
-    - stage:
-      dist: trusty
-      name: JDK7 Tests
-      jdk: openjdk7
-      script: ./test.sh
     - stage:
       name: JDK8 Tests
       jdk: openjdk8
@@ -40,6 +34,10 @@ jobs:
     - stage:
       name: JDK11 Tests
       jdk: openjdk11
+      script: ./test.sh
+    - stage:
+      name: JDK12 Tests
+      jdk: openjdk12
       script: ./test.sh
 
 deploy:
