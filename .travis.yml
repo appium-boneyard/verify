@@ -10,6 +10,7 @@ jdk:
 jobs:
   include:
     - stage:
+      dist: trusty
       name: Jar Build
       jdk: openjdk7
       script:
@@ -20,6 +21,7 @@ jobs:
             ./build.sh
           fi
     - stage:
+      dist: trusty
       name: JDK7 Tests
       jdk: openjdk7
       script: ./test.sh
