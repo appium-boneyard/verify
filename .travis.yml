@@ -1,17 +1,11 @@
 language: java
 sudo: false
-jdk:
-  openjdk8
-  openjdk9
-  openjdk10
-  openjdk11
-  openjdk12
+jdk: openjdk8
 
 jobs:
   include:
     - stage:
       name: JDK8 Tests
-      jdk: openjdk8
       before_script: ./build.sh
       script: ./test.sh
     - stage:
