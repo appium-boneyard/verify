@@ -1,6 +1,9 @@
 .classpath
 .settings/
 bin/
-*.apk
 .DS_Store
 target/*
+*.iml
+.idea/
+target/
+.vscode/
