@@ -40,6 +40,7 @@ deploy:
   file_glob: true
   file: "./target/verify*.jar"
   on:
+    branch: add-secret
     jdk: openjdk8
-    tags: true
+    # tags: true
     repo: appium/verify
