@@ -42,5 +42,5 @@ deploy:
   on:
     branch: add-secret
     jdk: openjdk8
-    # tags: true
+    tags: true
     repo: appium/verify
