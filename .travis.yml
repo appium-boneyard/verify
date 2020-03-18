@@ -39,6 +39,7 @@ deploy:
     secure: n/N9zRGEXB13b26Z9vfH1nxomftOW61Raj8WwYJJbNcL5op3/Sx0wM1iI//y+XPwJ0Y5cktaSaS9rlKLcf6aUfQJYTLGBiD5ZzBHkVl9T6C1POLZF/1we1oQuAl1bk2G+9Z49gkT6Ul3CRf698S9M0nciPN+q7Bm6+bt+rOb90QHJNRisjyOn/tiQjgdH6leIOaxEkkCy0t7kqRv6P+eLdDSr7SwYHTWI6HmHJv6S7nR3ulSgNQNKVxIe9e/TZovNIoourXm1qm67YOuqJk2oTe6qE+z++FpVfIeUUyLOAb/FcOTSmnFXWnq0g7AG5u8ggc2DyKp//xeKd9Z4DK3+kEiItueKWenMNn34OXDiOzqcwp41EFg4QaK0U9mT8uPTkYuJ2c1h1fEk2NxeQHPtaoIeRqJhjzbXwuCdxCsFwPUxEysWmrfI2DbXKSSDm6jMjNbW+s8ta9YOhvieQzWLwuKP/iaKzrRaO8Twj31Nb/FRV0yMzV/L9vXNClmHttmV5qLWuxotN+8ww/JyFSbW8IQndIO6I7xIGi71Y7DNXggC9dEczQJKHYuasfLzetBIShqKGNnG9Z6+J/BIXBJBU5ZDhefuuunAet1DupHCD0qHSE1p4ggkNCtNedr4ciPvkXenbiD2gGgZoxb1uONN/D72knR/lXDjVKlEedkxy0=
   file_glob: true
   file: target/verify*.jar
+  skip_cleanup: true
   on:
     jdk: openjdk8
     tags: true
